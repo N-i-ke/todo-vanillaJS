@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ToDo List App</title>
+<style>
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    margin: 10px 0;
+  }
+</style>
+</head>
+<body>
+
+<h1>ToDo List</h1>
+
+<input type="text" id="taskInput" placeholder="Add new task">
+<button onclick="addTask()">タスクを追加する</button>
+
+<ul id="taskList"></ul>
+
+<p>現在のタスク数: <span id="totalTasks">0</span> 完了したタスク: <span id="completedTasks">0</span> 未完了のタスク: <span id="uncompletedTasks">0</span></p>
+
+<script src="./index.js"></script>
+</body>
+</html>
